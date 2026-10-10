@@ -135,6 +135,8 @@
     }
     .card-link:hover { color: var(--accent2); }
     .card-link svg { width: 14px; height: 14px; }
+    .card-note, .card p.card-note { color: #94a3b8; font-size: .75rem; }
+    .card-footer { flex-wrap: wrap; }
 
     .status {
       display: inline-flex; align-items: center; gap: .35rem; font-size: .7rem;
@@ -229,49 +231,49 @@
           <div class="card-icon">🏢</div>
           <span class="card-type">ERP · Desktop</span>
         </div>
-        <span class="status status-done"><span class="status-dot"></span>Completado</span>
-        <h3>ERP de Escritorio con Bot de WhatsApp</h3>
-        <p>Sistema ERP completo para pequeñas empresas y dispensarios. Gestión de clientes, stock, ventas y caja, con bot de WhatsApp 24/7 para atención automática de pedidos. Todo como .exe instalable en la PC del cliente, sin servidor externo.</p>
+        <span class="status status-prod"><span class="status-dot"></span>En producción · Windows</span>
+        <h3>Hojas de Vida ERP</h3>
+        <p>Aplicación de escritorio para la gestión de un dispensario de cannabis medicinal. Reúne clientes, ventas, stock por lotes, caja, compras, entregas y auditoría sobre PostgreSQL local. Combina React, Electron y Spring Boot, con reportes PDF/Excel, migraciones y respaldos verificados.</p>
+        <p class="card-note">v2.0.73 publicada. La actualización de instalaciones existentes a esta versión está pendiente de validación real.</p>
         <div class="card-tags">
           <span class="tag">Java 21</span>
           <span class="tag">Spring Boot</span>
-          <span class="tag">React 18</span>
+          <span class="tag">React 19</span>
           <span class="tag">TypeScript</span>
           <span class="tag">PostgreSQL</span>
           <span class="tag">Electron</span>
-          <span class="tag">WhatsApp API</span>
+          <span class="tag">Flyway</span>
           <span class="tag">JWT</span>
         </div>
         <div class="card-footer">
-          <a href="https://github.com/LucasT27/erp-whatsapp-bot" target="_blank" class="card-link">
+          <a href="https://github.com/LucasT27/hdv-releases/releases/tag/v2.0.73" target="_blank" rel="noopener noreferrer" class="card-link" aria-label="Ver publicación v2.0.73 de Hojas de Vida ERP">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-            Ver repo
+            Ver publicación v2.0.73
           </a>
+          <span class="card-note">Código privado</span>
         </div>
       </div>
 
       <div class="card" style="--card-color: #22d3a0;">
         <div class="card-header">
-          <div class="card-icon">📱</div>
-          <span class="card-type">Mobile · API</span>
+          <div class="card-icon">🏘️</div>
+          <span class="card-type">Web · Gestión operativa</span>
         </div>
-        <span class="status status-done"><span class="status-dot"></span>Completado</span>
-        <h3>API Mobile-First para Control de Stock</h3>
-        <p>Backend profesional para app Android/iOS de control de inventario controlado. Roles granulares (Admin, Operador, Auditor), trazabilidad completa de movimientos y despliegue dockerizado. Arquitectura diseñada para tolerancia a baja conectividad.</p>
+        <span class="status status-dev"><span class="status-dot"></span>Piloto publicado · En evolución</span>
+        <h3>Administración de Consorcios</h3>
+        <p>Aplicación web que centraliza reportes, casos, tareas, proveedores, mantenimiento preventivo y documentación. Incorpora permisos por rol, aislamiento entre administraciones e historial de operaciones. Piloto publicado en Netlify, en evolución con validación funcional del cliente.</p>
+        <p class="card-note">Gestión operativa, sin liquidación de expensas ni contabilidad. El piloto requiere autenticación; no hay una demo pública.</p>
         <div class="card-tags">
-          <span class="tag">REST API</span>
-          <span class="tag">Docker</span>
-          <span class="tag">JWT</span>
-          <span class="tag">Android</span>
-          <span class="tag">iOS</span>
-          <span class="tag">Auditoría</span>
-          <span class="tag">Roles RBAC</span>
+          <span class="tag">React 19</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">Supabase</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">RLS</span>
+          <span class="tag">Netlify</span>
+          <span class="tag">GitHub Actions</span>
         </div>
         <div class="card-footer">
-          <a href="https://github.com/LucasT27/mobile-stock-api" target="_blank" class="card-link">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-            Ver repo
-          </a>
+          <span class="card-note">Código privado · Acceso restringido</span>
         </div>
       </div>
 
@@ -299,74 +301,51 @@
         </div>
       </div>
 
-      <div class="card" style="--card-color: #ec4899;">
-        <div class="card-header">
-          <div class="card-icon">🌐</div>
-          <span class="card-type">Web · Frontend</span>
-        </div>
-        <span class="status status-done"><span class="status-dot"></span>Completado</span>
-        <h3>Sitio Web Institucional</h3>
-        <p>Sitio web institucional multi-página con catálogo de productos, planes de membresía y formulario de contacto. Diseño responsive, CSS personalizado, sin frameworks y sin costos de servidor.</p>
-        <div class="card-tags">
-          <span class="tag">HTML5</span>
-          <span class="tag">CSS3</span>
-          <span class="tag">JavaScript</span>
-          <span class="tag">Responsive</span>
-          <span class="tag">Multi-página</span>
-        </div>
-        <div class="card-footer">
-          <a href="https://github.com/LucasT27/web-ecommerce" target="_blank" class="card-link">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-            Ver repo
-          </a>
-        </div>
-      </div>
-
       <div class="card" style="--card-color: #818cf8;">
         <div class="card-header">
           <div class="card-icon">🏍️</div>
-          <span class="card-type">ERP · Electron</span>
+          <span class="card-type">Google Sheets · Apps Script</span>
         </div>
-        <span class="status status-done"><span class="status-dot"></span>Completado</span>
-        <h3>ERP-TALLER-MOTOS — Gestión Comercial de Escritorio</h3>
-        <p>Aplicación de escritorio Electron para gestión comercial de un taller de motos. Arquitectura full-stack empaquetada en un solo ejecutable: backend embebido, frontend React y base de datos local. Relay server para sincronización.</p>
+        <span class="status status-dev"><span class="status-dot"></span>En desarrollo avanzado</span>
+        <h3>Fausto Motos</h3>
+        <p>Sistema de presupuestos y servicios de mantenimiento para un taller de motos, desarrollado con Google Sheets y Apps Script. Implementa cálculos y validaciones de negocio, numeración controlada, conservación de datos históricos y un checklist de 26 controles por servicio.</p>
+        <p class="card-note">Integración parcial con Google y validación operativa pendiente. Documentos, historial y recuperación probados localmente, aún pendientes de integración real.</p>
         <div class="card-tags">
-          <span class="tag">Electron</span>
-          <span class="tag">React</span>
-          <span class="tag">Node.js</span>
-          <span class="tag">Desktop App</span>
-          <span class="tag">Gestión comercial</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Apps Script</span>
+          <span class="tag">Google Sheets</span>
+          <span class="tag">HTML / CSS</span>
+          <span class="tag">Node Test Runner</span>
+          <span class="tag">GitHub Actions</span>
         </div>
         <div class="card-footer">
-          <a href="https://github.com/LucasT27/gestion-comercial-desktop" target="_blank" class="card-link">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-            Ver repo
-          </a>
+          <span class="card-note">Código privado · Sin demo pública</span>
         </div>
       </div>
 
       <div class="card" style="--card-color: #22d3a0;">
         <div class="card-header">
           <div class="card-icon">🛒</div>
-          <span class="card-type">E-commerce · Full-Stack</span>
+          <span class="card-type">E-commerce · Serverless</span>
         </div>
-        <span class="status status-done"><span class="status-dot"></span>Completado</span>
-        <h3>E-commerce Full-Stack — Tienda de Importaciones</h3>
-        <p>Plataforma e-commerce completa con +1900 productos, dos modalidades de venta (stock directo e importados por consulta), pagos online con Mercado Pago, panel admin, emails automáticos, gestión de stock en tiempo real y dominio propio.</p>
+        <span class="status status-prod"><span class="status-dot"></span>En producción · Evolución activa</span>
+        <h3>HDV Store</h3>
+        <p>Plataforma de comercio electrónico para productos en stock e importaciones a pedido. Integra catálogo, carrito, cuentas de usuario, pagos con Mercado Pago y administración de productos y pedidos. Combina JavaScript vanilla, funciones serverless y PostgreSQL, con operaciones transaccionales de inventario.</p>
+        <p class="card-note">Las importaciones se consultan por separado del stock disponible. Logística y facturación tienen alcance parcial; el recorrido comercial integral continúa en validación.</p>
         <div class="card-tags">
-          <span class="tag">HTML · JS</span>
+          <span class="tag">JavaScript vanilla</span>
+          <span class="tag">Node.js</span>
           <span class="tag">Supabase</span>
           <span class="tag">PostgreSQL</span>
           <span class="tag">Mercado Pago</span>
-          <span class="tag">Resend</span>
-          <span class="tag">Cloudinary</span>
-          <span class="tag">Netlify</span>
+          <span class="tag">Netlify Functions</span>
         </div>
         <div class="card-footer">
-          <a href="https://github.com/LucasT27/ecommerce-store" target="_blank" class="card-link">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-            Ver repo
+          <a href="https://hdvstore.com.ar/" target="_blank" rel="noopener noreferrer" class="card-link" aria-label="Visitar el sitio de HDV Store">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 3h6v6M10 14 21 3M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg>
+            Visitar HDV Store
           </a>
+          <span class="card-note">Código privado</span>
         </div>
       </div>
 
