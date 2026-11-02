@@ -30,12 +30,10 @@ h2 { font-size: 1.2rem; line-height: 1.4; margin: 0 0 1rem; letter-spacing: -.02
 .step { color: var(--accent); font: .66rem/1.5 'JetBrains Mono', monospace; text-transform: uppercase; letter-spacing: .06em; display: block; margin-bottom: .35rem; }
 .architecture h3 { margin: 0 0 .4rem; font-size: .95rem; line-height: 1.4; }
 .architecture p { margin: 0; color: var(--muted); font-size: .83rem; line-height: 1.65; }
-.detail-grid { display: grid; grid-template-columns: 1.25fr 1fr; gap: 3rem; margin-top: 2.5rem; }
+.work-section { margin-top: 2.5rem; }
 .work-list { padding-left: 1.1rem; margin: 0; color: var(--muted); font-size: .9rem; }
 .work-list li { padding-left: .3rem; margin-bottom: .65rem; }
 .work-list li::marker { color: var(--accent); }
-.decision { border-left: 2px solid var(--border); padding-left: 1.5rem; }
-.decision p { margin: 0 0 .9rem; font-size: .9rem; color: var(--muted); }
 .project-footer { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; border-top: 1px solid var(--border); padding-top: 1.5rem; margin-top: 2.5rem; font-size: .85rem; }
 .project-footer a { text-decoration: none; }
 @media (max-width: 640px) {
@@ -43,7 +41,5 @@ h2 { font-size: 1.2rem; line-height: 1.4; margin: 0 0 1rem; letter-spacing: -.02
   main { padding: 2.5rem 1.25rem 2rem; }
   .architecture { grid-template-columns: 1fr; gap: .9rem; }
   .architecture li:not(:last-child)::after { content: '↓'; top: auto; bottom: -.8rem; left: 50%; right: auto; }
-  .detail-grid { grid-template-columns: 1fr; gap: 1.5rem; }
-  .decision { border-left: 0; border-top: 1px solid var(--border); padding: 1.5rem 0 0; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
