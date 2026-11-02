@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HDV Store — Lucas Tomasello</title>
-  <meta name="description" content="Tienda online que reúne productos en stock e importaciones a pedido. Permite navegar el catálogo, armar un carrito, pagar con Mercado Pago y administrar productos y pedidos." />
+  <meta name="description" content="Tienda online para productos en stock e importaciones a pedido, con pagos integrados mediante Mercado Pago y gestión de envíos con Correo Argentino. Reúne catálogo, carrito, cuentas de usuario y administración de productos y pedidos." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../assets/proyecto.css" />
@@ -21,17 +21,17 @@
     <header class="project-header">
       <p class="eyebrow">E-commerce · Serverless</p>
       <h1>HDV Store</h1>
-      <p class="lead">Tienda online que reúne productos en stock e importaciones a pedido. Permite navegar el catálogo, armar un carrito, pagar con Mercado Pago y administrar productos y pedidos.</p>
+      <p class="lead">Tienda online para productos en stock e importaciones a pedido, con pagos integrados mediante Mercado Pago y gestión de envíos con Correo Argentino. Reúne catálogo, carrito, cuentas de usuario y administración de productos y pedidos.</p>
       <div class="meta">
         <span class="status status-prod">En producción · Evolución activa</span>
       </div>
-      <ul class="tags" aria-label="Tecnologías"><li>JavaScript vanilla</li><li>Node.js</li><li>Netlify Functions</li><li>Supabase</li><li>PostgreSQL</li><li>Mercado Pago</li></ul>
+      <ul class="tags" aria-label="Tecnologías"><li>JavaScript vanilla</li><li>Node.js</li><li>Netlify Functions</li><li>Supabase</li><li>PostgreSQL</li><li>Mercado Pago</li><li>Correo Argentino</li></ul>
     </header>
     <section class="architecture-section" aria-labelledby="arquitectura">
       <h2 id="arquitectura">Arquitectura</h2>
       <ol class="architecture">
         <li><span class="step">01 · Interfaz</span><h3>HTML, CSS y JavaScript</h3><p>Páginas estáticas para catálogo, carrito, cuenta y checkout, con módulos compartidos y diseño adaptable a móviles.</p></li>
-        <li><span class="step">02 · Backend</span><h3>Netlify Functions</h3><p>Funciones serverless para pagos, pedidos e integraciones. Mercado Pago comunica cambios mediante webhooks.</p></li>
+        <li><span class="step">02 · Backend</span><h3>Netlify Functions</h3><p>Funciones serverless para pedidos e integraciones con Mercado Pago y Correo Argentino. Los cambios de pago se reciben mediante webhooks.</p></li>
         <li><span class="step">03 · Datos e identidad</span><h3>Supabase y PostgreSQL</h3><p>Autenticación de compradores y operaciones SQL transaccionales para pedidos, reservas y movimientos de inventario.</p></li>
       </ol>
     </section>
@@ -39,9 +39,10 @@
       <section aria-labelledby="trabajo">
         <h2 id="trabajo">Qué se hizo</h2>
         <ul class="work-list">
-          <li>Catálogo con búsqueda y filtros, carrito persistente, cuentas de usuario y checkout con Mercado Pago.</li>
-          <li>Panel de productos y pedidos, control de inventario y archivado administrativo sin eliminar los registros comerciales.</li>
-          <li>Reservas de stock, validación de pagos y operaciones idempotentes para manejar reintentos y notificaciones repetidas.</li>
+          <li>Catálogo con búsqueda y filtros, carrito persistente, cuentas de usuario y panel de productos y pedidos.</li>
+          <li>Mercado Pago: checkout online, validación de pagos y recepción de notificaciones mediante webhooks.</li>
+          <li>Correo Argentino: cotización de envíos, selección de sucursales y creación de envíos desde el administrador.</li>
+          <li>Reservas de stock, archivado de pedidos y operaciones idempotentes para manejar reintentos y notificaciones repetidas.</li>
         </ul>
       </section>
       <section class="decision" aria-labelledby="decision">
