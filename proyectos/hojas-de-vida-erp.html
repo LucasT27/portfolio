@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hojas de Vida ERP — Lucas Tomasello</title>
+  <meta name="description" content="Aplicación Windows para centralizar la operación de un dispensario de cannabis medicinal: ventas, stock, caja, compras y entregas. Los datos se conservan en una base local." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/proyecto.css" />
+</head>
+<body style="--accent: #a5b4fc;">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Navegación principal">
+      <a class="brand" href="../index.html" aria-label="Lucas Tomasello, inicio">lucas<span>.dev</span></a>
+      <a class="back-link" href="../index.html#proyectos">← Todos los proyectos</a>
+    </nav>
+  </header>
+  <main id="contenido">
+    <header class="project-header">
+      <p class="eyebrow">ERP · Escritorio Windows</p>
+      <h1>Hojas de Vida ERP</h1>
+      <p class="lead">Aplicación Windows para centralizar la operación de un dispensario de cannabis medicinal: ventas, stock, caja, compras y entregas. Los datos se conservan en una base local.</p>
+      <div class="meta">
+        <span class="status ">Desarrollo terminado</span>
+        <span class="access">Código y distribución privados</span>
+      </div>
+      <ul class="tags" aria-label="Tecnologías"><li>Electron</li><li>React / TypeScript</li><li>Java 21</li><li>Spring Boot</li><li>PostgreSQL</li><li>Flyway</li></ul>
+    </header>
+    <section class="architecture-section" aria-labelledby="arquitectura">
+      <h2 id="arquitectura">Arquitectura</h2>
+      <ol class="architecture">
+        <li><span class="step">01 · Interfaz</span><h3>React dentro de Electron</h3><p>Pantallas de gestión en una aplicación instalable. Electron coordina el inicio y cierre de los procesos locales.</p></li>
+        <li><span class="step">02 · Lógica de negocio</span><h3>API con Spring Boot</h3><p>Java concentra las operaciones, validaciones y permisos que utiliza la interfaz.</p></li>
+        <li><span class="step">03 · Datos</span><h3>PostgreSQL local</h3><p>Persistencia en Windows, migraciones con Flyway y respaldos para conservar la información entre versiones.</p></li>
+      </ol>
+    </section>
+    <div class="detail-grid">
+      <section aria-labelledby="trabajo">
+        <h2 id="trabajo">Qué se hizo</h2>
+        <ul class="work-list">
+          <li>Gestión de clientes, ventas, pagos, stock por lotes, caja, compras y entregas.</li>
+          <li>Usuarios y permisos, auditoría de operaciones y reportes exportables a PDF y Excel.</li>
+          <li>Empaquetado para Windows y un proceso de actualización con respaldo verificado y controles de integridad.</li>
+        </ul>
+      </section>
+      <section class="decision" aria-labelledby="decision">
+        <h2 id="decision">Decisión técnica</h2>
+        <p>Integrar la interfaz, el backend y la base de datos en una experiencia de escritorio. La persistencia se mantiene separada de los archivos del programa para acompañar las actualizaciones sin reemplazar los datos del usuario.</p>
+      </section>
+    </div>
+    <p class="scope">El portfolio presenta el proyecto; los instaladores y el código tienen acceso restringido.</p>
+    <footer class="project-footer">
+      <a href="../index.html#proyectos">← Volver al portfolio</a>
+      <a href="../index.html#contacto">Contacto</a>
+    </footer>
+  </main>
+</body>
+</html>

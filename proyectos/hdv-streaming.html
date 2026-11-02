@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HDV Streaming — Lucas Tomasello</title>
+  <meta name="description" content="Automatización de contenido futbolístico para preparar anuncios de partidos, previas estadísticas y noticias. Combina información deportiva, cálculo cuantitativo y generación de textos e imágenes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/proyecto.css" />
+</head>
+<body style="--accent: #fdba74;">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Navegación principal">
+      <a class="brand" href="../index.html" aria-label="Lucas Tomasello, inicio">lucas<span>.dev</span></a>
+      <a class="back-link" href="../index.html#proyectos">← Todos los proyectos</a>
+    </nav>
+  </header>
+  <main id="contenido">
+    <header class="project-header">
+      <p class="eyebrow">Automatización · n8n e IA</p>
+      <h1>HDV Streaming</h1>
+      <p class="lead">Automatización de contenido futbolístico para preparar anuncios de partidos, previas estadísticas y noticias. Combina información deportiva, cálculo cuantitativo y generación de textos e imágenes.</p>
+      <div class="meta">
+        <span class="status ">Desarrollo terminado</span>
+        <span class="access">Workflows de acceso privado</span>
+      </div>
+      <ul class="tags" aria-label="Tecnologías"><li>n8n</li><li>JavaScript</li><li>API-Football</li><li>Claude</li><li>OpenAI Images</li><li>Placid</li></ul>
+    </header>
+    <section class="architecture-section" aria-labelledby="arquitectura">
+      <h2 id="arquitectura">Arquitectura</h2>
+      <ol class="architecture">
+        <li><span class="step">01 · Fuentes</span><h3>Datos y recursos gráficos</h3><p>API-Football aporta partidos y estadísticas; RSS y Tavily complementan noticias e historial. Drive reúne escudos y banderas.</p></li>
+        <li><span class="step">02 · Procesamiento</span><h3>n8n, JavaScript y Claude</h3><p>Los workflows transforman y validan los datos. JavaScript realiza los cálculos y Claude prepara el análisis y los textos.</p></li>
+        <li><span class="step">03 · Contenido y salida</span><h3>Imágenes y publicaciones</h3><p>Placid y OpenAI generan piezas visuales. Los flujos incluyen integraciones de publicación en Instagram y Telegram.</p></li>
+      </ol>
+    </section>
+    <div class="detail-grid">
+      <section aria-labelledby="trabajo">
+        <h2 id="trabajo">Qué se hizo</h2>
+        <ul class="work-list">
+          <li>Tres workflows especializados: publicación de partidos, previas estadísticas y noticias.</li>
+          <li>Modelo cuantitativo con Poisson, forma reciente, localía, historial y factores contextuales.</li>
+          <li>Resolución de escudos, generación de flyers y captions, detección de duplicados, reintentos y registros de diagnóstico.</li>
+        </ul>
+      </section>
+      <section class="decision" aria-labelledby="decision">
+        <h2 id="decision">Decisión técnica</h2>
+        <p>Separar el cálculo estadístico de la redacción con IA. Primero se obtienen las estimaciones numéricas; después se utilizan como contexto para producir el análisis y el contenido editorial.</p>
+      </section>
+    </div>
+    <footer class="project-footer">
+      <a href="../index.html#proyectos">← Volver al portfolio</a>
+      <a href="../index.html#contacto">Contacto</a>
+    </footer>
+  </main>
+</body>
+</html>
