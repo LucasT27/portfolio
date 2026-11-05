@@ -146,6 +146,14 @@
     .status-done { background: rgba(99,102,241,0.1); color: var(--accent2); border: 1px solid rgba(99,102,241,0.3); }
     .status-done .status-dot { background: var(--accent2); }
 
+    .ai-intro { max-width: 850px; color: var(--muted); margin-bottom: 1.5rem; }
+    .ai-workflow { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; list-style: none; counter-reset: ai-step; }
+    .ai-workflow li { border-top: 1px solid var(--border); padding-top: 1rem; counter-increment: ai-step; }
+    .ai-workflow li::before { content: '0' counter(ai-step); color: var(--accent2); font: .75rem 'JetBrains Mono', monospace; }
+    .ai-workflow h3 { font-size: 1rem; margin: .5rem 0; }
+    .ai-workflow p { color: var(--muted); font-size: .9rem; line-height: 1.7; }
+    .ai-application { color: var(--muted); font-size: .9rem; margin-top: 1.5rem; max-width: 850px; }
+
     .skills-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 1.5rem; }
     .skill-group-title { font-size: .75rem; color: var(--muted); font-family: 'JetBrains Mono', monospace; margin-bottom: .5rem; }
     .skill-pills { display: flex; flex-wrap: wrap; gap: .4rem; }
@@ -178,12 +186,14 @@
       .profile-facts { display: grid; grid-template-columns: auto 1fr; gap: .2rem .8rem; border: 0; padding: 0; }
       .profile-facts dd { margin: 0; font-size: .86rem; }
       nav { padding: 0 1rem; }
-      .nav-links { gap: .65rem; }
-      .nav-links a { font-size: .78rem; }
+      .nav-logo { font-size: .9rem; }
+      .nav-links { gap: .5rem; }
+      .nav-links a { font-size: .75rem; }
       section { padding: 2.5rem 1rem; }
       .contact-box { padding: 1.5rem 1rem; }
       .contact-links .btn { max-width: 100%; padding-inline: .7rem; }
       .projects-grid { grid-template-columns: 1fr; }
+      .ai-workflow { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -194,6 +204,7 @@
   <div class="nav-links">
     <a href="#sobre-mi">Perfil</a>
     <a href="#proyectos">Proyectos</a>
+    <a href="#uso-ia" aria-label="Cómo uso la inteligencia artificial">IA</a>
     <a href="#aptitudes">Aptitudes</a>
     <a href="#contacto">Contacto</a>
   </div>
@@ -347,6 +358,30 @@
       </div>
 
     </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<section id="uso-ia" aria-labelledby="titulo-uso-ia">
+  <div class="container">
+    <h2 id="titulo-uso-ia" class="section-title">Cómo uso la IA en mis proyectos</h2>
+    <p class="ai-intro">Uso ChatGPT, Codex y Claude como apoyo en el desarrollo. Configuro agentes especializados y adapto skills con instrucciones reutilizables para organizar el trabajo por etapas.</p>
+    <ol class="ai-workflow">
+      <li>
+        <h3>Requisitos y contexto</h3>
+        <p>Defino qué se necesita construir, el contexto del proyecto y los criterios de aceptación de cada tarea.</p>
+      </li>
+      <li>
+        <h3>Agentes y skills</h3>
+        <p>Distribuyo tareas de análisis, desarrollo y documentación. Adapto instrucciones reutilizables para mantener un proceso consistente entre etapas.</p>
+      </li>
+      <li>
+        <h3>Revisión y pruebas</h3>
+        <p>Coordino revisiones y pruebas, evalúo los resultados y apruebo las entregas antes de avanzar.</p>
+      </li>
+    </ol>
+    <p class="ai-application">Apliqué esta forma de trabajo en sistemas de gestión, aplicaciones web y de escritorio, y automatizaciones con n8n y Google Apps Script.</p>
   </div>
 </section>
 
